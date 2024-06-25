@@ -10,9 +10,9 @@ import lombok.Setter;
 @Getter
 public class InvoiceRequestDto {
 	
-	@NotEmpty(message = "amount field is mandatory")
+	@NotNull(message = "amount field is mandatory")
 	private double amount;
-	@NotEmpty(message = "date field is mandatory")
+	@NotNull(message = "date field is mandatory")
 	private LocalDate dueDate;
 
 }

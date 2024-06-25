@@ -84,7 +84,7 @@ private InvoiceService invoiceService;
 	 * @throws PaidamountGreterThanAmountException
 	 */
 	@PutMapping("/payments/{id}")
-	@ApiOperation("get all invoice")
+	@ApiOperation("update paid ammount in invoice")
 	@ApiResponses(value = {@ApiResponse(responseContainer = "905",code = 900,message = "Invoice not found")})
 	public ResponseEntity<ResponseDto> updateInvoices(@PathVariable Long id, @RequestParam Double paidAmount) throws InvoiceNotFoundException, PaidamountGreterThanAmountException
 	{
